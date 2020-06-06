@@ -65,7 +65,7 @@ if not _PRETRAINED_YML.exists():
 def _generic(name: str,
              duration: float = None,
              step: float = 0.25,
-             batch_size: int = 32,
+             batch_size: int = 16,
              device: typing.Optional[typing.Union[typing.Text, torch.device]] = None,
              pipeline: typing.Optional[bool] = None,
              force_reload: bool = False) -> typing.Union[_Pretrained, _Pipeline]:
